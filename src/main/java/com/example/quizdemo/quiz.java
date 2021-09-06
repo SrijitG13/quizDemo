@@ -13,4 +13,5 @@ public class quiz {
     public String quesno;
     public String ques;
     public String ans;
+    public String[] choice;
 }

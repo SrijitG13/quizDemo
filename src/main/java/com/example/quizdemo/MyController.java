@@ -16,11 +16,12 @@ public class MyController {
         @GetMapping("/quizlist")
         public quiz[] quizzes(){
             quiz[] arr = new quiz[5];
-            arr[0] = new quiz("1","What is java","Java is programming language");
-            arr[1] = new quiz("2","What is C","C is programming language");
-            arr[2] = new quiz("3","What is C++","C++ is programming language");
-            arr[3] = new quiz("4","What is Python","Python is programming language");
-            arr[4] = new quiz("5","What is R","R is programming language");
+            String[] choice = {"1","2","3"};
+            arr[0] = new quiz("1","What is java","Java is programming language",choice);
+            arr[1] = new quiz("2","What is C","C is programming language",choice);
+            arr[2] = new quiz("3","What is C++","C++ is programming language",choice);
+            arr[3] = new quiz("4","What is Python","Python is programming language",choice);
+            arr[4] = new quiz("5","What is R","R is programming language",choice);
             return arr;
         }
     
